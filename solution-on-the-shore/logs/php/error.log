@@ -1,0 +1,220 @@
+[30-Mar-2020 22:51:08 UTC] WordPress database error Table 'local.wp_et_divi_ab_testing_stats' doesn't exist for query SHOW FULL COLUMNS FROM `wp_et_divi_ab_testing_stats` made by require('wp-blog-header.php'), wp, WP->main, do_action_ref_array('wp'), WP_Hook->do_action, WP_Hook->apply_filters, et_pb_ab_init, et_builder_ab_initialize_for_post, et_pb_add_stats_record
+[30-Mar-2020 22:51:10 UTC] WordPress database error Table 'local.wp_et_divi_ab_testing_stats' doesn't exist for query SELECT * FROM `wp_et_divi_ab_testing_stats` WHERE test_id = 8 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/Divi/page.php'), get_footer, locate_template, load_template, require_once('/themes/Divi/footer.php'), wp_footer, do_action('wp_footer'), WP_Hook->do_action, WP_Hook->apply_filters, et_fb_wp_footer, et_fb_enqueue_assets, do_action('et_fb_enqueue_assets'), WP_Hook->do_action, WP_Hook->apply_filters, et_fb_backend_helpers, et_fb_get_dynamic_backend_helpers, et_builder_ab_options, et_pb_ab_has_report
+[30-Mar-2020 22:51:25 UTC] WordPress database error Table 'local.wp_et_divi_ab_testing_stats' doesn't exist for query SHOW COLUMNS FROM `wp_et_divi_ab_testing_stats` LIKE 'client_id' made by do_action('wp_ajax_et_pb_create_ab_tables'), WP_Hook->do_action, WP_Hook->apply_filters, et_pb_create_ab_tables
+[01-Apr-2020 18:31:05 UTC] PHP Warning:  ZipArchive::locateName(): Invalid or uninitialized Zip object in /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php on line 315
+[01-Apr-2020 18:31:05 UTC] PHP Stack trace:
+[01-Apr-2020 18:31:05 UTC] PHP   1. {main}() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:0
+[01-Apr-2020 18:31:05 UTC] PHP   2. do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:175
+[01-Apr-2020 18:31:05 UTC] PHP   3. WP_Hook->do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/plugin.php:478
+[01-Apr-2020 18:31:05 UTC] PHP   4. WP_Hook->apply_filters() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 18:31:05 UTC] PHP   5. wdtSaveTableWithColumns() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 18:31:05 UTC] PHP   6. WDTConfigController::saveTableConfig() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/controllers/wdt_admin_ajax_actions.php:23
+[01-Apr-2020 18:31:05 UTC] PHP   7. WDTConfigController::tryCreateTable() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:36
+[01-Apr-2020 18:31:05 UTC] PHP   8. WPDataTable->fillFromData() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:447
+[01-Apr-2020 18:31:05 UTC] PHP   9. WPDataTable->excelBasedConstruct() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1689
+[01-Apr-2020 18:31:05 UTC] PHP  10. PHPExcel_Reader_Excel2007->load() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1333
+[01-Apr-2020 18:31:05 UTC] PHP  11. PHPExcel_Reader_Excel2007->getFromZipArchive() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:355
+[01-Apr-2020 18:31:05 UTC] PHP  12. ZipArchive->locateName() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:315
+[01-Apr-2020 18:31:05 UTC] PHP Warning:  ZipArchive::getFromIndex(): Invalid or uninitialized Zip object in /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php on line 315
+[01-Apr-2020 18:31:05 UTC] PHP Stack trace:
+[01-Apr-2020 18:31:05 UTC] PHP   1. {main}() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:0
+[01-Apr-2020 18:31:05 UTC] PHP   2. do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:175
+[01-Apr-2020 18:31:05 UTC] PHP   3. WP_Hook->do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/plugin.php:478
+[01-Apr-2020 18:31:05 UTC] PHP   4. WP_Hook->apply_filters() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 18:31:05 UTC] PHP   5. wdtSaveTableWithColumns() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 18:31:05 UTC] PHP   6. WDTConfigController::saveTableConfig() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/controllers/wdt_admin_ajax_actions.php:23
+[01-Apr-2020 18:31:05 UTC] PHP   7. WDTConfigController::tryCreateTable() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:36
+[01-Apr-2020 18:31:05 UTC] PHP   8. WPDataTable->fillFromData() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:447
+[01-Apr-2020 18:31:05 UTC] PHP   9. WPDataTable->excelBasedConstruct() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1689
+[01-Apr-2020 18:31:05 UTC] PHP  10. PHPExcel_Reader_Excel2007->load() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1333
+[01-Apr-2020 18:31:05 UTC] PHP  11. PHPExcel_Reader_Excel2007->getFromZipArchive() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:355
+[01-Apr-2020 18:31:05 UTC] PHP  12. ZipArchive->getFromIndex() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:315
+[01-Apr-2020 18:31:05 UTC] PHP Warning:  ZipArchive::locateName(): Invalid or uninitialized Zip object in /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php on line 319
+[01-Apr-2020 18:31:05 UTC] PHP Stack trace:
+[01-Apr-2020 18:31:05 UTC] PHP   1. {main}() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:0
+[01-Apr-2020 18:31:05 UTC] PHP   2. do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:175
+[01-Apr-2020 18:31:05 UTC] PHP   3. WP_Hook->do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/plugin.php:478
+[01-Apr-2020 18:31:05 UTC] PHP   4. WP_Hook->apply_filters() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 18:31:05 UTC] PHP   5. wdtSaveTableWithColumns() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 18:31:05 UTC] PHP   6. WDTConfigController::saveTableConfig() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/controllers/wdt_admin_ajax_actions.php:23
+[01-Apr-2020 18:31:05 UTC] PHP   7. WDTConfigController::tryCreateTable() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:36
+[01-Apr-2020 18:31:05 UTC] PHP   8. WPDataTable->fillFromData() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:447
+[01-Apr-2020 18:31:05 UTC] PHP   9. WPDataTable->excelBasedConstruct() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1689
+[01-Apr-2020 18:31:05 UTC] PHP  10. PHPExcel_Reader_Excel2007->load() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1333
+[01-Apr-2020 18:31:05 UTC] PHP  11. PHPExcel_Reader_Excel2007->getFromZipArchive() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:355
+[01-Apr-2020 18:31:05 UTC] PHP  12. ZipArchive->locateName() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:319
+[01-Apr-2020 18:31:05 UTC] PHP Warning:  ZipArchive::getFromIndex(): Invalid or uninitialized Zip object in /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php on line 319
+[01-Apr-2020 18:31:05 UTC] PHP Stack trace:
+[01-Apr-2020 18:31:05 UTC] PHP   1. {main}() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:0
+[01-Apr-2020 18:31:05 UTC] PHP   2. do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:175
+[01-Apr-2020 18:31:05 UTC] PHP   3. WP_Hook->do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/plugin.php:478
+[01-Apr-2020 18:31:05 UTC] PHP   4. WP_Hook->apply_filters() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 18:31:05 UTC] PHP   5. wdtSaveTableWithColumns() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 18:31:05 UTC] PHP   6. WDTConfigController::saveTableConfig() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/controllers/wdt_admin_ajax_actions.php:23
+[01-Apr-2020 18:31:05 UTC] PHP   7. WDTConfigController::tryCreateTable() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:36
+[01-Apr-2020 18:31:05 UTC] PHP   8. WPDataTable->fillFromData() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:447
+[01-Apr-2020 18:31:05 UTC] PHP   9. WPDataTable->excelBasedConstruct() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1689
+[01-Apr-2020 18:31:05 UTC] PHP  10. PHPExcel_Reader_Excel2007->load() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1333
+[01-Apr-2020 18:31:05 UTC] PHP  11. PHPExcel_Reader_Excel2007->getFromZipArchive() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:355
+[01-Apr-2020 18:31:05 UTC] PHP  12. ZipArchive->getFromIndex() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:319
+[01-Apr-2020 18:31:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php on line 356
+[01-Apr-2020 18:31:05 UTC] PHP Stack trace:
+[01-Apr-2020 18:31:05 UTC] PHP   1. {main}() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:0
+[01-Apr-2020 18:31:05 UTC] PHP   2. do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:175
+[01-Apr-2020 18:31:05 UTC] PHP   3. WP_Hook->do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/plugin.php:478
+[01-Apr-2020 18:31:05 UTC] PHP   4. WP_Hook->apply_filters() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 18:31:05 UTC] PHP   5. wdtSaveTableWithColumns() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 18:31:05 UTC] PHP   6. WDTConfigController::saveTableConfig() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/controllers/wdt_admin_ajax_actions.php:23
+[01-Apr-2020 18:31:05 UTC] PHP   7. WDTConfigController::tryCreateTable() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:36
+[01-Apr-2020 18:31:05 UTC] PHP   8. WPDataTable->fillFromData() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:447
+[01-Apr-2020 18:31:05 UTC] PHP   9. WPDataTable->excelBasedConstruct() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1689
+[01-Apr-2020 18:31:05 UTC] PHP  10. PHPExcel_Reader_Excel2007->load() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1333
+[01-Apr-2020 18:31:05 UTC] PHP Warning:  ZipArchive::locateName(): Invalid or uninitialized Zip object in /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php on line 315
+[01-Apr-2020 18:31:05 UTC] PHP Stack trace:
+[01-Apr-2020 18:31:05 UTC] PHP   1. {main}() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:0
+[01-Apr-2020 18:31:05 UTC] PHP   2. do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:175
+[01-Apr-2020 18:31:05 UTC] PHP   3. WP_Hook->do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/plugin.php:478
+[01-Apr-2020 18:31:05 UTC] PHP   4. WP_Hook->apply_filters() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 18:31:05 UTC] PHP   5. wdtSaveTableWithColumns() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 18:31:05 UTC] PHP   6. WDTConfigController::saveTableConfig() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/controllers/wdt_admin_ajax_actions.php:23
+[01-Apr-2020 18:31:05 UTC] PHP   7. WDTConfigController::tryCreateTable() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:36
+[01-Apr-2020 18:31:05 UTC] PHP   8. WPDataTable->fillFromData() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:447
+[01-Apr-2020 18:31:05 UTC] PHP   9. WPDataTable->excelBasedConstruct() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1689
+[01-Apr-2020 18:31:05 UTC] PHP  10. PHPExcel_Reader_Excel2007->load() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1333
+[01-Apr-2020 18:31:05 UTC] PHP  11. PHPExcel_Reader_Excel2007->getFromZipArchive() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:392
+[01-Apr-2020 18:31:05 UTC] PHP  12. ZipArchive->locateName() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:315
+[01-Apr-2020 18:31:05 UTC] PHP Warning:  ZipArchive::getFromIndex(): Invalid or uninitialized Zip object in /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php on line 315
+[01-Apr-2020 18:31:05 UTC] PHP Stack trace:
+[01-Apr-2020 18:31:05 UTC] PHP   1. {main}() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:0
+[01-Apr-2020 18:31:05 UTC] PHP   2. do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:175
+[01-Apr-2020 18:31:05 UTC] PHP   3. WP_Hook->do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/plugin.php:478
+[01-Apr-2020 18:31:05 UTC] PHP   4. WP_Hook->apply_filters() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 18:31:05 UTC] PHP   5. wdtSaveTableWithColumns() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 18:31:05 UTC] PHP   6. WDTConfigController::saveTableConfig() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/controllers/wdt_admin_ajax_actions.php:23
+[01-Apr-2020 18:31:05 UTC] PHP   7. WDTConfigController::tryCreateTable() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:36
+[01-Apr-2020 18:31:05 UTC] PHP   8. WPDataTable->fillFromData() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:447
+[01-Apr-2020 18:31:05 UTC] PHP   9. WPDataTable->excelBasedConstruct() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1689
+[01-Apr-2020 18:31:05 UTC] PHP  10. PHPExcel_Reader_Excel2007->load() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1333
+[01-Apr-2020 18:31:05 UTC] PHP  11. PHPExcel_Reader_Excel2007->getFromZipArchive() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:392
+[01-Apr-2020 18:31:05 UTC] PHP  12. ZipArchive->getFromIndex() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:315
+[01-Apr-2020 18:31:05 UTC] PHP Warning:  ZipArchive::locateName(): Invalid or uninitialized Zip object in /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php on line 319
+[01-Apr-2020 18:31:05 UTC] PHP Stack trace:
+[01-Apr-2020 18:31:05 UTC] PHP   1. {main}() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:0
+[01-Apr-2020 18:31:05 UTC] PHP   2. do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:175
+[01-Apr-2020 18:31:05 UTC] PHP   3. WP_Hook->do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/plugin.php:478
+[01-Apr-2020 18:31:05 UTC] PHP   4. WP_Hook->apply_filters() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 18:31:05 UTC] PHP   5. wdtSaveTableWithColumns() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 18:31:05 UTC] PHP   6. WDTConfigController::saveTableConfig() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/controllers/wdt_admin_ajax_actions.php:23
+[01-Apr-2020 18:31:05 UTC] PHP   7. WDTConfigController::tryCreateTable() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:36
+[01-Apr-2020 18:31:05 UTC] PHP   8. WPDataTable->fillFromData() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:447
+[01-Apr-2020 18:31:05 UTC] PHP   9. WPDataTable->excelBasedConstruct() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1689
+[01-Apr-2020 18:31:05 UTC] PHP  10. PHPExcel_Reader_Excel2007->load() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1333
+[01-Apr-2020 18:31:05 UTC] PHP  11. PHPExcel_Reader_Excel2007->getFromZipArchive() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:392
+[01-Apr-2020 18:31:05 UTC] PHP  12. ZipArchive->locateName() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:319
+[01-Apr-2020 18:31:05 UTC] PHP Warning:  ZipArchive::getFromIndex(): Invalid or uninitialized Zip object in /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php on line 319
+[01-Apr-2020 18:31:05 UTC] PHP Stack trace:
+[01-Apr-2020 18:31:05 UTC] PHP   1. {main}() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:0
+[01-Apr-2020 18:31:05 UTC] PHP   2. do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:175
+[01-Apr-2020 18:31:05 UTC] PHP   3. WP_Hook->do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/plugin.php:478
+[01-Apr-2020 18:31:05 UTC] PHP   4. WP_Hook->apply_filters() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 18:31:05 UTC] PHP   5. wdtSaveTableWithColumns() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 18:31:05 UTC] PHP   6. WDTConfigController::saveTableConfig() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/controllers/wdt_admin_ajax_actions.php:23
+[01-Apr-2020 18:31:05 UTC] PHP   7. WDTConfigController::tryCreateTable() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:36
+[01-Apr-2020 18:31:05 UTC] PHP   8. WPDataTable->fillFromData() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:447
+[01-Apr-2020 18:31:05 UTC] PHP   9. WPDataTable->excelBasedConstruct() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1689
+[01-Apr-2020 18:31:05 UTC] PHP  10. PHPExcel_Reader_Excel2007->load() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1333
+[01-Apr-2020 18:31:05 UTC] PHP  11. PHPExcel_Reader_Excel2007->getFromZipArchive() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:392
+[01-Apr-2020 18:31:05 UTC] PHP  12. ZipArchive->getFromIndex() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:319
+[01-Apr-2020 18:31:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php on line 393
+[01-Apr-2020 18:31:05 UTC] PHP Stack trace:
+[01-Apr-2020 18:31:05 UTC] PHP   1. {main}() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:0
+[01-Apr-2020 18:31:05 UTC] PHP   2. do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:175
+[01-Apr-2020 18:31:05 UTC] PHP   3. WP_Hook->do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/plugin.php:478
+[01-Apr-2020 18:31:05 UTC] PHP   4. WP_Hook->apply_filters() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 18:31:05 UTC] PHP   5. wdtSaveTableWithColumns() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 18:31:05 UTC] PHP   6. WDTConfigController::saveTableConfig() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/controllers/wdt_admin_ajax_actions.php:23
+[01-Apr-2020 18:31:05 UTC] PHP   7. WDTConfigController::tryCreateTable() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:36
+[01-Apr-2020 18:31:05 UTC] PHP   8. WPDataTable->fillFromData() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:447
+[01-Apr-2020 18:31:05 UTC] PHP   9. WPDataTable->excelBasedConstruct() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1689
+[01-Apr-2020 18:31:05 UTC] PHP  10. PHPExcel_Reader_Excel2007->load() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1333
+[01-Apr-2020 18:31:05 UTC] PHP Warning:  ZipArchive::locateName(): Invalid or uninitialized Zip object in /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php on line 315
+[01-Apr-2020 18:31:05 UTC] PHP Stack trace:
+[01-Apr-2020 18:31:05 UTC] PHP   1. {main}() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:0
+[01-Apr-2020 18:31:05 UTC] PHP   2. do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:175
+[01-Apr-2020 18:31:05 UTC] PHP   3. WP_Hook->do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/plugin.php:478
+[01-Apr-2020 18:31:05 UTC] PHP   4. WP_Hook->apply_filters() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 18:31:05 UTC] PHP   5. wdtSaveTableWithColumns() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 18:31:05 UTC] PHP   6. WDTConfigController::saveTableConfig() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/controllers/wdt_admin_ajax_actions.php:23
+[01-Apr-2020 18:31:05 UTC] PHP   7. WDTConfigController::tryCreateTable() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:36
+[01-Apr-2020 18:31:05 UTC] PHP   8. WPDataTable->fillFromData() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:447
+[01-Apr-2020 18:31:05 UTC] PHP   9. WPDataTable->excelBasedConstruct() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1689
+[01-Apr-2020 18:31:05 UTC] PHP  10. PHPExcel_Reader_Excel2007->load() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1333
+[01-Apr-2020 18:31:05 UTC] PHP  11. PHPExcel_Reader_Excel2007->getFromZipArchive() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:1705
+[01-Apr-2020 18:31:05 UTC] PHP  12. ZipArchive->locateName() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:315
+[01-Apr-2020 18:31:05 UTC] PHP Warning:  ZipArchive::getFromIndex(): Invalid or uninitialized Zip object in /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php on line 315
+[01-Apr-2020 18:31:05 UTC] PHP Stack trace:
+[01-Apr-2020 18:31:05 UTC] PHP   1. {main}() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:0
+[01-Apr-2020 18:31:05 UTC] PHP   2. do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:175
+[01-Apr-2020 18:31:05 UTC] PHP   3. WP_Hook->do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/plugin.php:478
+[01-Apr-2020 18:31:05 UTC] PHP   4. WP_Hook->apply_filters() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 18:31:05 UTC] PHP   5. wdtSaveTableWithColumns() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 18:31:05 UTC] PHP   6. WDTConfigController::saveTableConfig() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/controllers/wdt_admin_ajax_actions.php:23
+[01-Apr-2020 18:31:05 UTC] PHP   7. WDTConfigController::tryCreateTable() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:36
+[01-Apr-2020 18:31:05 UTC] PHP   8. WPDataTable->fillFromData() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:447
+[01-Apr-2020 18:31:05 UTC] PHP   9. WPDataTable->excelBasedConstruct() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1689
+[01-Apr-2020 18:31:05 UTC] PHP  10. PHPExcel_Reader_Excel2007->load() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1333
+[01-Apr-2020 18:31:05 UTC] PHP  11. PHPExcel_Reader_Excel2007->getFromZipArchive() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:1705
+[01-Apr-2020 18:31:05 UTC] PHP  12. ZipArchive->getFromIndex() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:315
+[01-Apr-2020 18:31:05 UTC] PHP Warning:  ZipArchive::locateName(): Invalid or uninitialized Zip object in /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php on line 319
+[01-Apr-2020 18:31:05 UTC] PHP Stack trace:
+[01-Apr-2020 18:31:05 UTC] PHP   1. {main}() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:0
+[01-Apr-2020 18:31:05 UTC] PHP   2. do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:175
+[01-Apr-2020 18:31:05 UTC] PHP   3. WP_Hook->do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/plugin.php:478
+[01-Apr-2020 18:31:05 UTC] PHP   4. WP_Hook->apply_filters() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 18:31:05 UTC] PHP   5. wdtSaveTableWithColumns() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 18:31:05 UTC] PHP   6. WDTConfigController::saveTableConfig() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/controllers/wdt_admin_ajax_actions.php:23
+[01-Apr-2020 18:31:05 UTC] PHP   7. WDTConfigController::tryCreateTable() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:36
+[01-Apr-2020 18:31:05 UTC] PHP   8. WPDataTable->fillFromData() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:447
+[01-Apr-2020 18:31:05 UTC] PHP   9. WPDataTable->excelBasedConstruct() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1689
+[01-Apr-2020 18:31:05 UTC] PHP  10. PHPExcel_Reader_Excel2007->load() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1333
+[01-Apr-2020 18:31:05 UTC] PHP  11. PHPExcel_Reader_Excel2007->getFromZipArchive() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:1705
+[01-Apr-2020 18:31:05 UTC] PHP  12. ZipArchive->locateName() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:319
+[01-Apr-2020 18:31:05 UTC] PHP Warning:  ZipArchive::getFromIndex(): Invalid or uninitialized Zip object in /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php on line 319
+[01-Apr-2020 18:31:05 UTC] PHP Stack trace:
+[01-Apr-2020 18:31:05 UTC] PHP   1. {main}() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:0
+[01-Apr-2020 18:31:05 UTC] PHP   2. do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:175
+[01-Apr-2020 18:31:05 UTC] PHP   3. WP_Hook->do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/plugin.php:478
+[01-Apr-2020 18:31:05 UTC] PHP   4. WP_Hook->apply_filters() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 18:31:05 UTC] PHP   5. wdtSaveTableWithColumns() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 18:31:05 UTC] PHP   6. WDTConfigController::saveTableConfig() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/controllers/wdt_admin_ajax_actions.php:23
+[01-Apr-2020 18:31:05 UTC] PHP   7. WDTConfigController::tryCreateTable() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:36
+[01-Apr-2020 18:31:05 UTC] PHP   8. WPDataTable->fillFromData() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:447
+[01-Apr-2020 18:31:05 UTC] PHP   9. WPDataTable->excelBasedConstruct() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1689
+[01-Apr-2020 18:31:05 UTC] PHP  10. PHPExcel_Reader_Excel2007->load() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1333
+[01-Apr-2020 18:31:05 UTC] PHP  11. PHPExcel_Reader_Excel2007->getFromZipArchive() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:1705
+[01-Apr-2020 18:31:05 UTC] PHP  12. ZipArchive->getFromIndex() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:319
+[01-Apr-2020 18:31:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php on line 1706
+[01-Apr-2020 18:31:05 UTC] PHP Stack trace:
+[01-Apr-2020 18:31:05 UTC] PHP   1. {main}() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:0
+[01-Apr-2020 18:31:05 UTC] PHP   2. do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:175
+[01-Apr-2020 18:31:05 UTC] PHP   3. WP_Hook->do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/plugin.php:478
+[01-Apr-2020 18:31:05 UTC] PHP   4. WP_Hook->apply_filters() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 18:31:05 UTC] PHP   5. wdtSaveTableWithColumns() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 18:31:05 UTC] PHP   6. WDTConfigController::saveTableConfig() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/controllers/wdt_admin_ajax_actions.php:23
+[01-Apr-2020 18:31:05 UTC] PHP   7. WDTConfigController::tryCreateTable() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:36
+[01-Apr-2020 18:31:05 UTC] PHP   8. WPDataTable->fillFromData() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:447
+[01-Apr-2020 18:31:05 UTC] PHP   9. WPDataTable->excelBasedConstruct() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1689
+[01-Apr-2020 18:31:05 UTC] PHP  10. PHPExcel_Reader_Excel2007->load() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1333
+[01-Apr-2020 18:31:05 UTC] PHP Warning:  ZipArchive::close(): Invalid or uninitialized Zip object in /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php on line 1734
+[01-Apr-2020 18:31:05 UTC] PHP Stack trace:
+[01-Apr-2020 18:31:05 UTC] PHP   1. {main}() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:0
+[01-Apr-2020 18:31:05 UTC] PHP   2. do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-admin/admin-ajax.php:175
+[01-Apr-2020 18:31:05 UTC] PHP   3. WP_Hook->do_action() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/plugin.php:478
+[01-Apr-2020 18:31:05 UTC] PHP   4. WP_Hook->apply_filters() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 18:31:05 UTC] PHP   5. wdtSaveTableWithColumns() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 18:31:05 UTC] PHP   6. WDTConfigController::saveTableConfig() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/controllers/wdt_admin_ajax_actions.php:23
+[01-Apr-2020 18:31:05 UTC] PHP   7. WDTConfigController::tryCreateTable() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:36
+[01-Apr-2020 18:31:05 UTC] PHP   8. WPDataTable->fillFromData() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wdtconfigcontroller.php:447
+[01-Apr-2020 18:31:05 UTC] PHP   9. WPDataTable->excelBasedConstruct() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1689
+[01-Apr-2020 18:31:05 UTC] PHP  10. PHPExcel_Reader_Excel2007->load() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/source/class.wpdatatable.php:1333
+[01-Apr-2020 18:31:05 UTC] PHP  11. ZipArchive->close() /Users/roger/Local Sites/solution-on-the-shore/app/public/wp-content/plugins/wpdatatables/lib/phpExcel/PHPExcel/Reader/Excel2007.php:1734
